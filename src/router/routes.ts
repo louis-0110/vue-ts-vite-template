@@ -4,7 +4,7 @@
  * @Author: gaoluo
  * @Date: 2022-07-13 17:25:03
  * @LastEditors: gaoluo
- * @LastEditTime: 2022-07-22 22:07:33
+ * @LastEditTime: 2022-07-24 20:31:25
  * @FilePath: /vue-ts-vite-template-main/src/router/routes.ts
  */
 import { RouteRecordRaw } from 'vue-router';
@@ -26,7 +26,7 @@ const routes: RouteRecordRaw[] = [
     path: '/login',
     component: Login,
     meta: {
-      level: 1
+      level: 0
     }
   },
   {
@@ -40,33 +40,21 @@ const routes: RouteRecordRaw[] = [
       {
         name: 'Work',
         path: 'work',
-        meta: {
-          level: 2
-        },
         component: Work
       },
       {
         name: 'Task',
         path: 'task',
-        meta: {
-          level: 2
-        },
         component: Task
       },
       {
         name: 'Message',
         path: 'message',
-        meta: {
-          level: 2
-        },
         component: Message
       },
       {
         name: 'Profile',
         path: 'profile',
-        meta: {
-          level: 2
-        },
         component: Profile
       }
     ]
